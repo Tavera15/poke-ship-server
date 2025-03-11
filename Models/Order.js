@@ -55,6 +55,10 @@ const OrderSchema = mongoose.Schema({
         type: Date, 
         default: Date.now 
     },
+    invoice: {
+        type: String,
+        required: true
+    }
 })
 
 const Order = mongoose.model("Order", OrderSchema);

@@ -9,7 +9,6 @@ const GetPokemon = async (req, res) =>
         const items = [];
         //const deck = await pokemon.card.where({ pageSize: 12, page: 24 })
         
-        
         const deck = await pokemon.card.where({ limit: 12, offset: 25 })
 
         res.status(200).json(deck);
